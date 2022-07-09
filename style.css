@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+header {
+    display: flex;
+    
+    width: 100%;
+    height: 100px;
+    background-color: rgb(42, 40, 40);
+}
+
+header h1 {
+    float: left;
+    font-size: 60px;
+    font-weight: lighter;
+    color: white;
+    font-family: Tahoma;
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+.header-list {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    padding-top: 35px;
+        
+}
+
+.header-list a  {
+    color: white;
+
+}
+
+.header-list li {
+    display: inline;
+    font-size: 15px;
+    color: white;
+    font-family: Tahoma ;
+    padding-right: 20px;
+    
+}
+
+.sub-header {
+    width: 100%;
+    height: 175px;
+    background-image: url(./Images/matrix.webp);;
+    
+}
+
+.sub-header h2 {
+    font-size: 40px;
+    font-family: Tahoma ;
+    color: white;
+    text-align: end;
+    margin-right: 20px;
+    padding-top: 15px;
+    
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 10px 5px 10px;
+    height: 550px;
+    margin-left: 100px;
+}
+
+.about-me img {
+    border-radius: 30px;
+    box-shadow: 4px 0px 4px 0px darkgray;
+    margin-top: 20px;
+    width: 350px;
+    height: 450px;
+        
+}
+
+.about-me-text {
+    padding: 15px;
+    font-family:Tahoma;
+    line-height: 2;
+    margin: 30px;
+    background-color: lightgray;
+    font-style: italic;
+
+}
+
+.work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 1000px;
+    width: 100%;
+    margin: 10px 0px 0px 100px;
+
+}
+  
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+}
+
+footer h3 {
+    font-size:50px ;
+    font-family:Tahoma;
+    color: black;
+}
+
+footer li {
+    display: inline;
+    justify-items: end;
+    font-family:Tahoma;
+    color: black;
+    float: right;
+    padding-right: 20px;
+}
