@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./Images/DM.png">
     <title>Dave Monaghan - Portfolio</title>
 </head>
 
 <body>
 
     <header class="header">
-        <div>
-            <h1>Dave Monaghan</h1>
-        </div>    
+            <div class="header-name">
+                <h1>Dave Monaghan</h1>
+            </div>
 
             <div class="header-list">   
-            <ul>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact-me">Contact me</a></li>
-                <li><a href="#cv">CV</a></li>
-            </ul>
-        </div>
+                <ul class="nav-items">
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact-me">Contact me</a></li>
+                    <li><a href="#cv">CV</a></li>
+                </ul>
+            </div>
     </header>
 
 
@@ -32,81 +33,80 @@
     <main>
 
 
-        <article class="about-me">
-            <div>
-             <img src="./Images/Dave.jpeg" alt="Me"/>
+        <article class="article">
+            <div id="about-me">
+                <h2>About me</h2>
             </div>
 
-            <div class="about-me-text">
-                <h2 id="#about-me">About me</h2>
+            <div id="about-image">
+             <img src="./Images/Dave.jpeg" alt="Me" width="400"/>
+            </div>
+
+            <div id="about-text">
                 <h3>Looking to change my career</h3>
                 <p>I'm a highly skilled Customer Service Agent, who's worked in the industry for the past 26 years. Having worked in the industry for so long i'm now ready for a new challenge.    </p>
                 <p></p>
                 <h3>Personal life</h3>
-                <p>I</p>
+                <p>I'm a highly skilled Customer Service Agent, who's worked in the industry for the past 26 years. Having worked in the industry for so long i'm now ready for a new challenge.</p>
             </div>
         </article>
 
         <section class="work">
-            <div>
+            <div class="work-header" id="work">
                 <h2>Work</h2>
             </div>
 
-            <div class="work-image-1">
-                <div>
-                    <img src="./Images/Coding.jpg" alt="portfolio" width="400px" height="600"/>
-                </div>
-
-                <div>
+            <div class="work-image relative-work"><a href="https://github.com/DaveMon79/Professional-Portfolio">
+                <img src="./Images/Coding.jpg" alt="Portfolio" height="600px" width="400px">
+                <div class="banner">  
                     <h3>Portfolio</h3>
                     <p>HTML</p>
-                    <p>css</p>
-                </div>
+                    <p>CSS</p>
+                </a>  
+                </div> 
             </div>
 
-            <div class="work-image-2">
-                <div>
-                    <img src="./Images/Coding.jpg" alt="Horiseon" width="300px" height="500px"/>
+
+            <div class="work-image relative-work"><a href="https://davemon79.github.io/Horiseon---Code-refactor-accessibility/">
+                <img src="./Images/Coding.jpg" alt="Portfolio" height="500px" width="300px">
+                <div class="banner">   
                     <h3>Horiseon</h3>
                     <p>HTML</p>
-                    <p>css</p>
-                </div>
+                    <p>CSS</p>
+                </a> 
+                </div>    
             </div>
 
-            <div class="work-image-3">
-                <div>
-                    <img src="./Images/Coding.jpg" alt="fanpage" width="200px" height="350px"/>
-                </div>
 
-                <div>
+            <div class="work-image relative-work"><a href="https://davemon79.github.io/Horiseon---Code-refactor-accessibility/">
+                <img src="./Images/Coding.jpg" alt="Portfolio" height="400px" width="200px">  
+                <div class="banner">                     
                     <h3>Fanpage</h3>
                     <p>HTML</p>
-                    <p>css</p>
-                </div>
-            </div>
-
-
+                    <p>CSS</p>
+                </a>
+                </div>    
             </div>
         </section>
+    
+    </main>
 
 
         <footer>
             <div>
-                <h3 id="#contact-me">Contact me</h3>
+                <h2 id="contact-me">Contact me</h2>
             </div>  
 
             <div>
                 <ul>
                     <li><a href="https://www.gmx.com">davemonaghan@gmx.com</a></li>
                     <li><a href="https://github.com/DaveMon79">Git hub</a></li>
-                    <li><a href="https://www.facebook.com/">Linkdin</a></li>
-                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/in/dave-monaghan-a1850b238/">Linkdin</a></li>
+                    <li><a href="https://www.facebook.com/dave.monaghan.351/">Facebook</a></li>
                 </ul>
             </div>
-
         </footer>
 
-    </main>
 
 </body>
 
