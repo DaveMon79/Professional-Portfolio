@@ -79,10 +79,12 @@ header ul {
     
 }
 
+
 /* adds margin to main page in-between subheader & footer */
 main {
     margin: 50px 100px 50px 100px;
 }
+
 
 /* aligns & centres the div's in article section */
 .article {
@@ -92,12 +94,14 @@ main {
     
 }
 
+
 /* adds space between h2 text and image */
 #about-me {
     flex: none;
     padding-right: 80px;
     
 }
+
 
 /* adds space bewteen image and bio*/
 #about-image {
@@ -106,12 +110,14 @@ main {
     
 }
 
+
 /* add radius and shadow to image */
 #about-image img {
     border-radius: 30px;
     box-shadow: 5px 10px black;
     
 }
+
 
 /* add backgrong colour, border and seperates text in bio */
 #about-text {
@@ -120,14 +126,16 @@ main {
     border-style: outset;
     padding: 10px;
     background-color: whitesmoke;
-    
+        
 }
+
 
 /* text size and padding to H3 in bio */
 #about-text h3 {
     font-size: 30px;
     padding-bottom: 20px;
 }
+
 
 /* font colour, size and aligns p element text*/
 #about-text p {
@@ -138,11 +146,13 @@ main {
 
 }
 
+
 /* font size and color for work & about me text */
 .article h2, .work-header h2 {
     font-size: 40px;
     color: black;
 }
+
 
 /* Height width and div display properties for nav element */
 .work {
@@ -155,6 +165,7 @@ main {
     margin-bottom: 100px;
 }
 
+
 /* adds even space between images */
 .work-header, .work-image {
     flex-grow: 2;
@@ -162,13 +173,13 @@ main {
 }
 
 
-/* */
+/* makes divs relative so lables can set on top of them */
 .relative-work {
     position: relative;
 }
 
 
-/* */
+/* positions label over images, and sets font size and color*/
 .banner {
     position: absolute;
     top: 50px;
@@ -209,6 +220,52 @@ nav h2 {
 }
 
 
+/* enlarges images when you hover over them */
+.work-image:hover { 
+    transform: scale(1.1); 
+}
+
+
+/* align text and button in a row and size of section */
+.button {
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    margin-bottom: 100px;   
+
+}
+
+
+/* font size for CV */
+.button h2 {
+    font-size: 40px;
+    
+}
+
+
+/* size and postioning of button */
+.button button {
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    margin-left: 115px;
+    
+}
+
+
+/* font colour of text on button */
+.button a {
+    color: black;
+}
+
+
+/* enlarges button when you hover over it */
+.button button:hover { 
+    transform: scale(1.1); 
+    
+    }
+
+
 /* size and display properties for footer */
 footer {
     background-color: rgb(73, 75, 77);
@@ -241,6 +298,7 @@ footer h2 {
     color: white;
     padding-left: 100px;
     font-size: 40px;
+    
 }
 
 
@@ -250,12 +308,17 @@ footer a {
 }
 
 
-/* make text, image and bio wrap at 900px */
+/* makes text, image and bio wrap at 900px */
 @media screen and (max-width: 900px) {
     .article {
-      display: flex;
-      flex-direction: column;  
-      
+      display: block;      
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    #about-text {
+      display: block; 
+      min-width: 400px;     
     }
   }
 
