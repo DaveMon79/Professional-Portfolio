@@ -13,12 +13,13 @@ body {
 }
 
 header {
-    height: 120px;
+    min-height: 120px;
     width: 100%;
     background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
 
 }
 
@@ -47,7 +48,8 @@ header ul {
 
 .sub-header {
     width: 100%;
-    height: 175px;
+    min-height: 175px;
+    flex-wrap: nowrap;
     background-image: url(./Images/matrix.webp);;
     margin-bottom: 100px;
     
@@ -70,6 +72,7 @@ main {
 .article {
     display: flex;
     align-items: center;
+    
 }
 
 #about-me {
@@ -129,9 +132,10 @@ main {
 .work {
     display: flex;
     align-items: center;
-    height: 700px;
+    min-height: 700px;
     width: 100%;
     margin-top: 150px;
+    flex-wrap: wrap;
     
 
 }
@@ -165,24 +169,26 @@ main {
 
 }
 
-section p {
+nav p {
     font-size: 12px;
     padding-top: 3px;
 }
 
 footer {
     background-color: rgb(73, 75, 77);
-    height: 100px;
-    width: 100;
+    min-height: 100px;
+    min-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
         
 }
 
 footer ul {
     display: inline-flex;
     margin-right: 70px;
+    
 }
 
 footer li {
@@ -201,19 +207,3 @@ footer a {
     color: white;
 }
 
-@media screen and (max-width: 992px) {
-    * {flex-wrap: wrap;
-    }
-  }
-
-
-@media screen and (max-width: 768px) {
-    * {flex-wrap: wrap;
-      }
-    }
-
-
-@media screen and (max-width: 576px) {
-    * {flex-wrap: nowrap;
-    }
-  }
