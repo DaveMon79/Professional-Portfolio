@@ -1,23 +1,23 @@
-/* */
-
+/* style font family, style and weight on full page */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     list-style: none;
     font-family: Tahoma;
+    font-weight: lighter;
 }
 
-/* */
 
+/* adds background image */
 body {
     background-image: url(./Images/Marble.jpg);
     background-size: cover;
             
 }
 
-/* */
 
+/* styles header header size and color and div display settings*/
 header {
     min-height: 120px;
     width: 100%;
@@ -29,39 +29,37 @@ header {
 
 }
 
-/* */
 
+/* aligns li's in header and font size and padding */
 header li{
     display: inline-flex;
     padding-left: 30px;
     font-size: 20px;
 }
 
-/* */
 
+/* h1 font color and padding in header */
 header h1 {
-    font-size: 70px;
-    font-family: Tahoma ;
+    font-size: 60px;
     color: white;
-    font-weight: lighter;
     padding-left: 100px;
 }
 
-/* */
 
+/* font color for aligned header list */
 header a {
     color: white;
     
 }
 
-/* */
 
+/* padding on list div */
 header ul {
     padding-right: 100px;
 }
 
-/* */
 
+/* adds background image and display properties to sub header */
 .sub-header {
     width: 100%;
     min-height: 175px;
@@ -71,11 +69,9 @@ header ul {
     
 }
 
-/* */
-
+/* styale font size, colour and position text in sub header */
 .sub-header h2 {
     font-size: 40px;
-    font-family: Tahoma ;
     color: white;
     text-align: end;
     margin-right: 100px;
@@ -83,50 +79,43 @@ header ul {
     
 }
 
-/* */
-
+/* adds margin to main page in-between subheader & footer */
 main {
     margin: 50px 100px 50px 100px;
 }
 
-/* */
-
+/* aligns & centres the div's in article section */
 .article {
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
     
 }
 
-/* */
-
+/* adds space between h2 text and image */
 #about-me {
     flex: none;
     padding-right: 80px;
     
 }
 
-/* */
-
+/* adds space bewteen image and bio*/
 #about-image {
     padding-right: 80px;
     
     
 }
 
-/* */
-
+/* add radius and shadow to image */
 #about-image img {
     border-radius: 30px;
     box-shadow: 5px 10px black;
     
 }
 
-/* */
-
-
+/* add backgrong colour, border and seperates text in bio */
 #about-text {
     line-height: 1.2;
-    font-family: Tahoma;
     border: 1px solid #555;
     border-style: outset;
     padding: 10px;
@@ -134,18 +123,14 @@ main {
     
 }
 
-/* */
-
+/* text size and padding to H3 in bio */
 #about-text h3 {
-    font-weight: lighter;
     font-size: 30px;
     padding-bottom: 20px;
 }
 
-/* */
-
+/* font colour, size and aligns p element text*/
 #about-text p {
-    font-family: Tahoma;
     padding-bottom: 20px;
     color: black;
     text-align: justify;
@@ -153,17 +138,13 @@ main {
 
 }
 
-/* */
-
+/* font size and color for work & about me text */
 .article h2, .work-header h2 {
     font-size: 40px;
-    font-family: Tahoma ;
     color: black;
-    font-weight: lighter;
 }
 
-/* */
-
+/* Height width and div display properties for nav element */
 .work {
     display: flex;
     align-items: center;
@@ -174,21 +155,20 @@ main {
     margin-bottom: 100px;
 }
 
-/* */
-
+/* adds even space between images */
 .work-header, .work-image {
     flex-grow: 2;
 
 }
 
-/* */
 
+/* */
 .relative-work {
     position: relative;
 }
 
-/* */
 
+/* */
 .banner {
     position: absolute;
     top: 50px;
@@ -200,33 +180,36 @@ main {
     border-radius: 0px 15px 15px 0px ;
         
 }
-/* adds border to work images */
 
+
+/* adds border to work images */
 nav div img {
     border: 1px solid black;
 }
 
-/* styles text on tag over work images */
 
+/* styles text on tag over work images */
 .banner h3, .banner p {
     font-weight: lighter;
     color: white;
 
 }
 
-/* */
 
+/* font size for HTML & CSS text */
 nav p {
     font-size: 12px;
     padding-top: 3px;
 }
 
+
+/* add between work text and image */
 nav h2 {
     margin-right: 50px;
 }
 
-/* */
 
+/* size and display properties for footer */
 footer {
     background-color: rgb(73, 75, 77);
     min-height: 100px;
@@ -238,31 +221,58 @@ footer {
         
 }
 
-/* */
 
+/* display footer list in-line */
 footer ul {
     display: inline-flex;
     margin-right: 70px;
     
 }
 
+
+/* seperates footer list text */
 footer li {
     padding-right: 30px;
 }
 
-/* */
 
+/* font size, color and padding for contact me text*/
 footer h2 {
-    font-family: Tahoma ;
     color: white;
-    font-weight: lighter;
     padding-left: 100px;
     font-size: 40px;
 }
 
-/* */
 
+/* font colour for footer list */
 footer a {
     color: white;
 }
 
+
+/* make text, image and bio wrap at 900px */
+@media screen and (max-width: 900px) {
+    .article {
+      display: flex;
+      flex-direction: column;  
+      
+    }
+  }
+
+
+/* adds padding between all main element text and images at 900px */
+@media screen and (max-width: 900px) {
+    article div, .work-header, .work-image {
+    padding: 25px;
+      
+    }
+  }
+
+
+/* aligns footer list on top of each other at 900px */
+@media screen and (max-width: 900px) {
+    footer ul {
+    display: block;
+      
+    }
+  }
