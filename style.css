@@ -114,8 +114,7 @@ main {
 /* add radius and shadow to image */
 #about-image img {
     border-radius: 30px;
-    box-shadow: 5px 10px black;
-    
+        
 }
 
 
@@ -126,7 +125,7 @@ main {
     border-style: outset;
     padding: 10px;
     background-color: whitesmoke;
-        
+    
 }
 
 
@@ -308,25 +307,39 @@ footer a {
 }
 
 
-/* makes text, image and bio wrap at 900px */
 @media screen and (max-width: 900px) {
-    .article {
-      display: block;      
+    #about-me   {
+    display: flex;
+
     }
   }
+
 
   @media screen and (max-width: 900px) {
-    #about-text {
-      display: block; 
-      min-width: 400px;     
+    #about-text,
+    .article h3,
+    .article p  {
+    min-width: 350px;
+    display:inline-block ;
+
     }
   }
+  
 
+  @media screen and (max-width: 900px) {
+    .article,
+    .work   {
+    display: flex;
+    flex-wrap: wrap ;
+    flex-direction: row;
+
+    }
+  }
 
 /* adds padding between all main element text and images at 900px */
 @media screen and (max-width: 900px) {
     article div, .work-header, .work-image {
-    padding: 25px;
+    padding: 50px;
       
     }
   }
@@ -337,5 +350,14 @@ footer a {
     footer ul {
     display: block;
       
+    }
+  }
+
+
+  @media screen and (max-width: 540px) {
+    .article 
+    .work   {
+    display: block;
+
     }
   }
