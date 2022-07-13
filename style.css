@@ -88,6 +88,7 @@ main {
 
 /* aligns & centres the div's in article section */
 .article {
+    width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -308,38 +309,33 @@ footer a {
 
 
 @media screen and (max-width: 900px) {
-    #about-me   {
-    display: flex;
+    #about-me
+    #about-me h3
+    #about-me p {
+    min-width: 450px;
+    color: aqua;
 
     }
   }
 
+ 
 
-  @media screen and (max-width: 900px) {
-    #about-text,
-    .article h3,
-    .article p  {
-    min-width: 350px;
-    display:inline-block ;
-
-    }
-  }
-  
-
-  @media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .article,
-    .work   {
-    display: flex;
+    .work,
+    #about-text    {
+    display: inline-flex;
     flex-wrap: wrap ;
-    flex-direction: row;
-
+    flex-direction: column;
+    
+    
     }
   }
 
 /* adds padding between all main element text and images at 900px */
 @media screen and (max-width: 900px) {
     article div, .work-header, .work-image {
-    padding: 50px;
+    margin:  50px;
       
     }
   }
@@ -353,11 +349,3 @@ footer a {
     }
   }
 
-
-  @media screen and (max-width: 540px) {
-    .article 
-    .work   {
-    display: block;
-
-    }
-  }
