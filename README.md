@@ -21,7 +21,7 @@ Using HTML & CSS, I created a professional looking portfolio for myself. The por
 
 # Screenshots
 
-![image](https://user-images.githubusercontent.com/103275458/178142366-8a6b5d02-4cbd-429e-9ec2-53a81c6e7fee.png)
+![image](https://user-images.githubusercontent.com/103275458/178838294-5a9bd76e-5e4b-4c55-839e-e62b838a3c08.png)
 
 
 # Links to Project:
