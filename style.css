@@ -1,4 +1,4 @@
-/* style font family, style and weight on full page */
+/* styles font family, style and weight on full page. */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -9,16 +9,18 @@
 }
 
 
-/* adds background image and sets size */
+/* adds background image and sets size, position and no repeat */
 body {
     background-image: url(./Images/Bee.jpg);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat    
+    background-size: 85%;
+    background-position: center; 
+    background-repeat: no-repeat;
+       
+
 }
 
 
-/* styles header header size and color and div display settings*/
+/* sets the header size, color and div display settings*/
 header {
     min-height: 120px;
     width: 100%;
@@ -31,7 +33,7 @@ header {
 }
 
 
-/* aligns li's in header and font size and padding */
+/* aligns li's in the header and sets font size and padding */
 header li{
     display: inline-flex;
     padding-left: 30px;
@@ -39,7 +41,7 @@ header li{
 }
 
 
-/* h1 font color and padding in header */
+/* h1 font size, color and padding in header */
 header h1 {
     font-size: 60px;
     color: white;
@@ -81,13 +83,13 @@ header ul {
 }
 
 
-/* adds margin to main page in-between subheader & footer */
+/* adds margin to main page in-between the subheader & footer */
 main {
     margin: 50px 100px 50px 100px;
 }
 
 
-/* aligns & centres the div's in article section */
+/* aligns,centres the div's in article section, and sets the width of div */
 .article {
     width: 100%;
     display: flex;
@@ -113,7 +115,7 @@ main {
 }
 
 
-/* add radius and shadow to image */
+/* adds radius and shadow to image */
 #about-image img {
     border-radius: 30px;
     border: 1px solid #555;
@@ -122,7 +124,7 @@ main {
 }
 
 
-/* add backgrong colour, border and seperates text in bio */
+/* adds background colour, border and seperates text in bio */
 #about-text {
     line-height: 1.2;
     border: 1px solid #555;
@@ -133,7 +135,7 @@ main {
 }
 
 
-/* text size and padding to H3 in bio */
+/* stets font size and padding to H3's in bio */
 #about-text h3 {
     font-size: 30px;
     padding-bottom: 20px;
@@ -152,13 +154,14 @@ main {
 
 
 /* font size and color for work & about me text */
-.article h2, .work-header h2 {
+.article h2, 
+.work-header h2 {
     font-size: 40px;
     color: black;
 }
 
 
-/* Height width and div display properties for nav element */
+/* sets Height width and div display properties for nav element */
 .work {
     display: flex;
     align-items: center;
@@ -171,19 +174,20 @@ main {
 
 
 /* adds even space between images */
-.work-header, .work-image {
+.work-header, 
+.work-image {
     flex-grow: 2;
 
 }
 
 
-/* makes divs relative so lables can set on top of them */
+/* makes image divs to relative so lables can be set on top of them */
 .relative-work {
     position: relative;
 }
 
 
-/* positions label over images, and sets font size and color*/
+/* positions label over images, and sets font size , color and radius to box*/
 .banner {
     position: absolute;
     top: 50px;
@@ -204,21 +208,22 @@ nav div img {
 
 
 /* styles text on tag over work images */
-.banner h3, .banner p {
+.banner h3, 
+.banner p {
     font-weight: lighter;
     color: white;
 
 }
 
 
-/* font size for HTML & CSS text */
+/* font size for p text in nav section */
 nav p {
     font-size: 12px;
     padding-top: 3px;
 }
 
 
-/* add between work text and image */
+/* adds sspace between work text and image */
 nav h2 {
     margin-right: 50px;
 }
@@ -230,7 +235,7 @@ nav h2 {
 }
 
 
-/* align text and button in a row and size of section */
+/* aligns text and button in a row and sets the size of section */
 .button {
     display: flex;
     flex-wrap: wrap;
@@ -241,7 +246,7 @@ nav h2 {
 }
 
 
-/* font size for CV */
+/* font size for CV h2 */
 .button h2 {
     font-size: 40px;
     
@@ -271,7 +276,7 @@ nav h2 {
     }
 
 
-/* size and display properties for footer */
+/* sets the size and display properties for footer */
 footer {
     background-color: rgb(73, 75, 77);
     min-height: 100px;
@@ -284,7 +289,7 @@ footer {
 }
 
 
-/* display footer list in-line */
+/* displays footer list in-line */
 footer ul {
     display: inline-flex;
     margin-right: 70px;
@@ -292,13 +297,13 @@ footer ul {
 }
 
 
-/* seperates footer list text */
+/* add space between footer list text */
 footer li {
     padding-right: 30px;
 }
 
 
-/* font size, color and padding for contact me text*/
+/* font size, color and padding for contact me h2*/
 footer h2 {
     color: white;
     padding-left: 100px;
@@ -353,7 +358,7 @@ footer a {
 }
 
 
-/* turns each elements into block display and add padding to seperate text */
+/* turns each elements into block display and adds padding to seperate text */
 @media screen and (max-width: 900px) {
     header ul,
     header li,
@@ -361,12 +366,18 @@ footer a {
     footer ul,
     footer li,
     footer h2,
-    .button {
+    .button
+         {
     
         display: block;
         padding-top: 10px;
         padding-left: 10px;
         padding-bottom: 10px;
+    }
+    #about-me {
+        display: inline-block;
+        justify-content: center;
+        margin: 20px 0px 20px 100px;
     }
 }
 
@@ -377,13 +388,15 @@ footer a {
     #about-text,
     .work-image img {
          width: 90%;
+         margin-left: 15px;
+    
 }
 }
 
 /* adds padding to main section */
 @media screen and (max-width: 900px) {
     main {
-        padding-left: 5px;
+        padding-left: 15px;
         
 }
 }
@@ -405,20 +418,21 @@ footer a {
 /* centres h2 & h3 text */
 @media screen and (max-width: 900px) {
     h2,
-    h3     {
-        text-align: center;
+    h3  {
+         text-align: center;
         
 }
 }
 
 /* centres text and image with margin */
 @media screen and (max-width: 900px) {
-    article h2,
     .button button,
     #about-image    {
-        margin-left: 50px;
+        margin-left: 25%;
         margin-top: 20px;
         
+}   article h2 {
+        padding-left: 25px;
 }
 }
 
