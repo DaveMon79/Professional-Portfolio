@@ -42,9 +42,9 @@ This project was extremely challenging. Once I’d decided on my design, I had f
 
 # Credits
 
-* My Tutor - Navpreet Ahuja 
-* You Tube - Tutorial videos
-* https://www.w3schools.com/ - for code tips
+* Catherine Au
+* Mike Hui
+* Beji
 
 
 # Contact me
@@ -60,4 +60,4 @@ University of Birmingham
 
 Trilogy Educational Services
 
-Horiseon Web Services
+
