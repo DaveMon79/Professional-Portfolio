@@ -55,6 +55,10 @@ header a {
     
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* padding on list div */
 header ul {
@@ -265,9 +269,14 @@ nav h2 {
 
 /* font colour of text on button */
 .button a {
-    color: black;
+    color: whitesmoke;
+    text-decoration: none;
 }
 
+button {
+    background-color: black;
+    border-radius: 3px;
+}
 
 /* enlarges button when you hover over it */
 .button button:hover { 

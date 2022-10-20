@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: Tahoma;
+    font-weight: lighter;
+    
+}
+
+body {
+    padding: 5% 15% 5% 15%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+h3 {
+    border-bottom: 2px solid black;
+    margin: 2vh 0 2vh 0;
+    font-weight: bold;
+    padding-bottom: 1vh;
+}
+
+h4 {
+    margin: 2vh 0 2vh 0;
+    font-weight: 650;
+}
+
+section {
+    margin-top: 6vh;
+    padding-bottom: 2vh;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+li {
+    margin-left: 5%;
+    list-style-type: circle;
+}
+
+.projects {
+    padding: 1vh 0 1vh 0;
+}
+
+a {
+    color: purple;
+    text-decoration: none;
+}
+
+p, li {
+    line-height: 1.5;
+}
+
+ul {
+    margin-top: 1.5vh;
+}
+
+.line-break {
+    border-bottom: 0.2px solid grey;
+    padding-bottom: 2vh;
+ }
+
+ .education {
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+ }
+
+ h5 {
+    font-size: 2vh;
+ }
+
+ .contact {
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.5;
+ }
