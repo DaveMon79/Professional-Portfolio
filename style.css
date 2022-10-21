@@ -274,8 +274,9 @@ nav h2 {
 }
 
 button {
-    background-color: black;
-    border-radius: 3px;
+    background-color: rgb(73, 75, 77);
+    border-radius: 5px;
+    border: none;
 }
 
 /* enlarges button when you hover over it */

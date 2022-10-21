@@ -40,13 +40,6 @@ This project was extremely challenging. Once I’d decided on my design, I had f
 * Making the page tablet and mobile responsive
 
 
-# Credits
-
-* Catherine Au
-* Mike Hui
-* Beji
-
-
 # Contact me
 
 davemonaghan@gmx.com 

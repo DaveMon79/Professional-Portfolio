@@ -8,8 +8,45 @@
     
 }
 
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  position: absolute;
+  top: 2vh;
+  left: 2vh;
+  color: black;
+  background-color: lightgray;
+  border-radius: 5px;
+  border: 2px solid black;
+
+}
+
+.material-symbols-outlined:hover {
+    transform: scale(1.25);
+    background-color: white;
+}
+
+header {
+    background-color: lightgray;
+    color: rgb(43, 35, 35);
+    padding: 1vh;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
 body {
-    padding: 5% 15% 5% 15%;
+    padding: 5vh 15% 5vh 15%;
+}
+
+main {
+    border: 2px solid black;
+    padding: 0 2vh 0 2vh;
+    color: darkslategray;
 }
 
 .title {
@@ -25,12 +62,12 @@ h3 {
 }
 
 h4 {
-    margin: 2vh 0 2vh 0;
-    font-weight: 650;
+    margin: 2vh 0 1vh 0;
+ 
 }
 
 section {
-    margin-top: 6vh;
+    margin-top: 4vh;
     padding-bottom: 2vh;
 }
 
@@ -49,7 +86,7 @@ li {
 }
 
 a {
-    color: purple;
+    color: blue;
     text-decoration: none;
 }
 
@@ -59,6 +96,10 @@ p, li {
 
 ul {
     margin-top: 1.5vh;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .line-break {
@@ -76,7 +117,11 @@ ul {
  }
 
  .contact {
-    font-weight: 700;
     margin: 0;
     line-height: 1.5;
+ }
+
+ .centre {
+    text-align: center;
+    font-weight: bold;
  }
