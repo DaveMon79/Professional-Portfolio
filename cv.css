@@ -35,21 +35,23 @@ header {
     background-color: rgb(240, 234, 234);
     color: rgb(43, 35, 35);
     padding: 1vh;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 
 body {
     padding: 10vh 15% 10vh 15%;
+
 }
 
 main {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
     padding: 0 2vh 0 2vh;
     color: black;
+    background-color: white;
 }
 
 .title {
@@ -125,7 +127,7 @@ ul {
 }
 
  h5 {
-    font-size: 2vh;
+    font-size: 15px;
  }
 
  .contact {
@@ -142,6 +144,10 @@ ul {
   
     body {
         padding: 10vh 2% 10vh 2%;
+    }
+
+    p, li, h1, h5, a {
+        font-weight: bolder;
     }
           
 }
