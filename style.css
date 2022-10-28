@@ -24,12 +24,11 @@ body {
 header {
     min-height: 120px;
     width: 100%;
-    background-color: black;
+    background-color:black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    opacity: 0.9;
 
 }
 
@@ -71,7 +70,7 @@ header ul {
 /* adds background image and display properties to sub header */
 .sub-header {
     width: 100%;
-    min-height: 175px;
+    min-height: 100px;
     flex-wrap: nowrap;
     background-image: url(./Images/matrix.webp);;
     margin-bottom: 100px;
@@ -110,7 +109,7 @@ main {
 /* adds space between h2 text and image */
 #about-me {
     flex: none;
-    padding-right: 80px;
+    padding-right: 40px;
     
 }
 
@@ -134,7 +133,7 @@ main {
 /* adds background colour, border and seperates text in bio */
 #about-text {
     line-height: 1.2;
-    border: 1px solid #555;
+    border: 0.3px solid #555;
     border-radius: 10px;
     padding: 10px;
     background-color: rgb(248, 247, 247);
@@ -145,8 +144,6 @@ main {
 /* stets font size and padding to H3's in bio */
 #about-text h3 {
     font-size: 30px;
-    /* padding-bottom: 10px;
-    padding-top: 5px; */
 }
 
 
@@ -210,7 +207,8 @@ main {
 
 /* adds border to work images */
 nav div img {
-    border: 1px solid black;
+    border: 0.2px solid black;
+    border-radius:5px;
 }
 
 
@@ -243,7 +241,7 @@ nav h2 {
 
 /* enlarges images when you hover over them */
 .work-image:hover { 
-    transform: scale(1.1); 
+    transform: scale(0.95); 
 }
 
 #description-1 {
@@ -311,12 +309,12 @@ nav h2 {
 
 /* font colour of text on button */
 .button a {
-    color: whitesmoke;
+    color: white;
     text-decoration: none;
 }
 
 button {
-    background-color: rgb(73, 75, 77);
+    background-color: rgb(164, 165, 165);
     border-radius: 10px;
     border: none;
 }
@@ -330,7 +328,7 @@ button {
 
 /* sets the size and display properties for footer */
 footer {
-    background-color: rgb(73, 75, 77);
+    background-color: rgb(164, 165, 165);
     min-height: 100px;
     min-width: 100%;
     display: flex;
@@ -435,7 +433,10 @@ footer a {
     #about-me,
     #about-image,
     #about-text,
-    .work-image img {
+    .work-image img,
+    #description-1,
+    #description-2,
+    #description-3  {
          width: 95%;
          align-content: center;
           
